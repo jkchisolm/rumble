@@ -8,6 +8,7 @@ export default function Messages() {
         <MessageItem
           name="John Doe"
           photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+          userId={1}
         />
       </div>
     </MainLayout>
