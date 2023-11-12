@@ -8,7 +8,7 @@ db = "rumble_app_profile.db"
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'rumble_app/index.html')
 
 
 def login_user(request):
