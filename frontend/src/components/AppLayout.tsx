@@ -27,6 +27,7 @@ export default function MainLayout({ children }: Props) {
             </Link>
           </ul>
         </nav>
+        {children}
       </div>
     </div>
   );
