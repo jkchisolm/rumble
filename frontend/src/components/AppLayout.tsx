@@ -22,6 +22,9 @@ export default function MainLayout({ children }: Props) {
             <Link href="/app">
               <li className="text-3xl font-bold mt-5">Home</li>
             </Link>
+            <Link href="/matches">
+              <li className="text-3xl font-bold mt-5">Beefin&apos;</li>
+            </Link>
             <Link href="/chat">
               <li className="text-3xl font-bold mt-5">Messages</li>
             </Link>

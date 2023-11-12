@@ -4,7 +4,7 @@ import UserCard from "@/components/UserCard";
 export default function App() {
   return (
     <MainLayout>
-      <div className="w-full h-full flex flex-row justify-center items-start p-10">
+      <div className="w-full h-full flex flex-col justify-start items-center p-10 overflow-scroll">
         <UserCard
           name="John Doe"
           photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
