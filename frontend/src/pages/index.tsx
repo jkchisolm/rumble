@@ -14,6 +14,12 @@ export default function Home() {
     >
       <nav className="flex flex-row justify-between items-center w-full p-5 bg-black">
         <div className="flex flex-row items-center justify-start">
+          <Image
+            src="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+            alt="logo"
+            width={64}
+            height={64}
+          />
           <h1 className="text-5xl font-bold text-red-500">Rumble</h1>
           <h2 className="text-lg px-7 text-white">Safety</h2>
         </div>
