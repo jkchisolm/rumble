@@ -1,32 +1,27 @@
 from django.shortcuts import render, redirect, HttpResponse, get_object_or_404
-from .models import Profile
+from django.contrib.auth import authenticate, login, logout
+from .models import Profile, User
 import sqlite3 as sl
 
 db = "rumble_app_profile.db"
+
 
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
 
 
-def home(request):
-    """
-
-    checks whether the user is logged in and returns appropriately.
-
-    :return: renders login.html if not logged in,
-                redirects to client otherwise.
-    """
-    if not request.session.get('logged_in'):
-        return render(request, 'login.html')
+def login_user(request):
+    if request.method == 'POST':
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            # Redirect to a success page.
+            redirect('home')
+        else:
+            # Return an 'invalid login' error message.
+            render(request, 'login.html')
     else:
-        return redirect(request, 'home.html')
-
-
-def db_create_profile(un: str, pw: str) -> None:
-    """
-    :param un:
-    :param pw:
-    :return: None
-    """
-    pass
+        return render(request, 'login.html')
