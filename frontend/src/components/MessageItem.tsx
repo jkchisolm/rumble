@@ -11,7 +11,6 @@ export default function MessageItem(props: Props) {
       </div>
       <div className="flex flex-col justify-center items-start ml-4">
         <h1 className="text-2xl font-bold text-black">{props.name}</h1>
-        <p className="text-lg font-bold text-gray-500">Hello there!</p>
       </div>
     </div>
   );
