@@ -15,12 +15,23 @@ export default function UserCard(props: Props) {
   const [effect, setEffect] = useState(false);
   const [showStats, setShowStats] = useState(false);
 
-  const handleClick = async () => {
+  const [mouseX, setMouseX] = useState(0);
+
+  const handleClick = async (e: any) => {
     await setEffect(!effect);
     // wait 0.5 secs then call setShowStats
     setTimeout(() => {
       setShowStats(!showStats);
     }, 500);
+    setMouseX(e.pageX);
+  };
+
+  const handleMouseExit = async (e: any) => {
+    if (e.pageX < mouseX) {
+      console.log("Swipe left");
+    } else {
+      console.log("Swipe right");
+    }
   };
 
   const handleAnimationEnd = () => {
