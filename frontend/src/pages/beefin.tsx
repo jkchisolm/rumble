@@ -6,56 +6,20 @@ export default function Beefin() {
     <MainLayout>
       <div className="w-full h-full flex flex-row flex-wrap overflow-scroll justify-start items-start p-4">
         <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+          name="tyler blevvins"
+          photoUrl="https://i.ibb.co/Wpn8tmg/Screenshot-2023-11-12-at-5-24-44-PM.png"
         />
         <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+          name="Goku"
+          photoUrl="https://i.ibb.co/k20KRSB/Screenshot-2023-11-12-at-5-24-37-PM.png"
         />
         <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+          name="aang"
+          photoUrl="https://i.ibb.co/tHVB90J/Screenshot-2023-11-12-at-5-24-50-PM.png"
         />
         <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
-        />
-        <SmallerCard
-          name="John Doe"
-          photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+          name="agony"
+          photoUrl="https://i.ibb.co/QPZ84Cg/Screenshot-2023-11-12-at-5-24-28-PM.png"
         />
       </div>
     </MainLayout>

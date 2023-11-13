@@ -7,8 +7,8 @@ export default function Chat() {
       <div className="flex flex-col justify-start items-stretch w-full h-full min-h-full">
         <div className="min-h-[90%]">
           <ChatMessage
-            name="John Doe"
-            photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+            name="Goku"
+            photoUrl="https://i.ibb.co/k20KRSB/Screenshot-2023-11-12-at-5-24-37-PM.png"
             userId={1}
           />
         </div>
