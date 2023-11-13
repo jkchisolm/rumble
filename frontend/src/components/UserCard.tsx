@@ -60,11 +60,11 @@ export default function UserCard(props: Props) {
           <div className="grid grid-cols-2 w-full">
             <div className="flex flex-col justify-center items-center">
               <div className="text-lg font-bold">Height</div>
-              <div className="text-lg">{props.height}</div>
+              <div className="text-lg">{props.height} in</div>
             </div>
             <div className="flex flex-col justify-center items-center">
               <div className="text-lg font-bold">Weight</div>
-              <div className="text-lg">{props.weight}</div>
+              <div className="text-lg">{props.weight} in</div>
             </div>
             <div className="flex flex-col justify-center items-center">
               <div className="text-lg font-bold">Age</div>
@@ -72,7 +72,7 @@ export default function UserCard(props: Props) {
             </div>
             <div className="flex flex-col justify-center items-center">
               <div className="text-lg font-bold">Reach</div>
-              <div className="text-lg">{props.reach}</div>
+              <div className="text-lg">{props.reach} in</div>
             </div>
             <div className="col-span-2 text-center">
               <div className="text-lg font-bold">Record</div>

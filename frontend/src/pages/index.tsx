@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,17 +25,21 @@ export default function Home() {
           <h2 className="text-lg px-7 text-white">Safety</h2>
         </div>
         <div>
-          <button className="bg-red-500 rounded-full text-white py-3 px-4 font-bold text-lg">
-            Enter
-          </button>
+          <Link href="/app">
+            <button className="bg-red-500 rounded-full text-white py-3 px-4 font-bold text-lg">
+              Enter
+            </button>
+          </Link>
         </div>
       </nav>
       <div className="flex flex-col flex-center justify-center items-center h-full w-full grow">
         <h1 className="text-9xl font-bold text-white">Swipe Right</h1>
         <div className="mt-7">
-          <button className="bg-red-500 rounded-full text-white py-3 px-20 font-bold text-2xl">
-            Enter
-          </button>
+          <Link href="/app">
+            <button className="bg-red-500 rounded-full text-white py-3 px-20 font-bold text-2xl">
+              Enter
+            </button>
+          </Link>
         </div>
       </div>
     </main>
