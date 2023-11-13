@@ -1,10 +1,17 @@
 import MainLayout from "@/components/AppLayout";
+import ChatMessage from "@/components/ChatMessage";
 
 export default function Chat() {
   return (
     <MainLayout>
       <div className="flex flex-col justify-start items-stretch w-full h-full min-h-full">
-        <div className="min-h-[90%]">Chat window</div>
+        <div className="min-h-[90%]">
+          <ChatMessage
+            name="John Doe"
+            photoUrl="https://i.ibb.co/82pWVvv/rumble-logo-1.png"
+            userId={1}
+          />
+        </div>
         <div className="flex flex-row justify-center items-center w-full h-10%">
           <input
             type="text"
