@@ -14,6 +14,7 @@ type Props = {
 export default function UserCard(props: Props) {
   const [effect, setEffect] = useState(false);
   const [showStats, setShowStats] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   const [mouseX, setMouseX] = useState(0);
 
@@ -41,7 +42,9 @@ export default function UserCard(props: Props) {
   return (
     <div
       className={`flex flex-col justify-start items-center shadow-lg border-2 p-10 rounded-3xl mb-8 
-      [transform-style:preserve-3d] ${effect && "animate-flip"}`}
+      [transform-style:preserve-3d] ${effect && "animate-flip"} ${
+        hidden && "hidden"
+      }`}
       onClick={handleClick}
       onAnimationEnd={handleAnimationEnd}
     >
@@ -83,7 +86,7 @@ export default function UserCard(props: Props) {
       </div>
       {showStats && (
         <div className="flex flex-row justify-center items-center mt-4">
-          <button className="bg-red-500 rounded-full text-white py-3 px-5 font-bold text-2xl mr-4">
+          <button className="bg-red-500 rounded-full text-white py-3 px-5 font-bold text-2xl mr-4" onClick={() => setHidden(true)}>
             X
           </button>
           <button className="bg-green-500 rounded-full text-white py-3 px-3 font-bold text-2xl ml-4">
